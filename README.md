@@ -5,3 +5,4 @@ steps to run :-
    of the participants you are able to make call with remote participant.
 
 Note :- Code is implemented with the demo of videocalltest js and html files, you can view their
+        path :- janus-gateway\html\[videocalltest.html and videocalltest.js]  
