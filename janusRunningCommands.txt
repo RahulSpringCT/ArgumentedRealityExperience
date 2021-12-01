@@ -1,0 +1,33 @@
+to start the remote janus server :-
+ export LD_LIBRARY_PATH=/usr/lib && /opt/janus/bin/janus debug-level=4
+
+ server = "ws://172.24.12.156:8188/janus"; --for remote janus server
+
+to start the local janus server :-
+  docker run -p 8088:8088 canyan/janus-gateway:latest
+
+  docker image of janus server :-
+    https://hub.docker.com/r/canyan/janus-gateway
+    then copy the pull command from this link and then paste this command on console to procede further.
+
+  server = "http://127.0.0.1:8088/janus"; --for local janus server
+
+
+command to check server is started or not :-
+  sudo netstat -nlp | grep janus
+
+command to kill the server :-
+ sudo kill -9 <process Id>
+
+
+Following are the default ports for janus (at the time of installations):-
+
+the audio_port :- 5004,
+the video_port :- 5002
+
+the ws port :- 8188,
+the http/default port :- 8088
+
+
+
+1. captureStream() method. (To capture the stream from canvas element)
